@@ -1,0 +1,539 @@
+
+body{
+    font-family: 'advent Pro', sans-serif ;
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+   
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* ********************navbar********************* */
+
+nav{
+    overflow: hidden;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Place la barre au-dessus de tout autre élément */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Ajoute une ombre subtile */
+
+}
+
+
+
+
+header li{
+    float: right;
+    
+    font-size: 20px;
+    
+}
+header li a {
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    padding: 18px 16px 18px;
+    
+}
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+ul li.active a{
+    background: #fff;
+    color: #000;
+}
+/* Conteneur du logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+/* Style du texte du logo */
+.logo-text h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0;
+}
+
+.logo-text p {
+    font-size: 1rem;
+    color: #ed930d;
+    margin: 0;
+}
+/* ***************IMAGE PRINCIPALE***************** */
+
+#imagePrincipale{
+    padding-top: 60px;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/artificial-intelligence-4389372.jpg) no-repeat fixed 50%;
+    background-size: cover;
+    height: 100vh;
+    height: 799px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    margin-top: 100px;
+    text-shadow: 1px 3px 1px #ed930d;
+
+}
+h2{
+    text-align: center;
+    color: #ed930d;
+    font-size: 40px;
+}
+/* *****************a propos*************************** */
+
+#propos{
+    background-color: #f1f2f6;
+    padding: 10px 0px 100px 0px;
+    text-align: center;
+}
+#textIntro{
+    padding: 0px 20%;
+}
+#textIntro h2{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+#prestation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;    
+}
+.imagePrestation{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tout horizontalement */
+    text-align: center; /* Centre le texte */
+    margin-bottom: 20px; /* Espacement entre les blocs */
+    position: relative; /* Nécessaire pour ajuster la position des enfants si besoin */
+}
+
+.imagePrestation img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+.imagePrestation h3{
+    font-family:'Dancing Script', cursive ;
+    text-align: center;
+    margin: 15px;
+    color: #ed930d;
+    font-size: 40px;
+    
+}
+
+.imagePrestation p{
+    max-width: 300px; /* Largeur maximale des paragraphes */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
+    margin-top: 15px; /* Espace entre le paragraphe et le titre */
+    background-color: #f9f9f9; /* Fond des paragraphes */
+    color: #333; /* Couleur du texte */
+}
+/* Conteneur du bouton CV */
+.cv-container {
+    text-align: center; /* Centre le bouton */
+    margin-top: 40px; /* Ajoute un espace par rapport au contenu précédent */
+}
+
+/* Style du bouton CV */
+.cv-button {
+    display: inline-block;
+    background-color: #ed930d; /* Couleur principale du bouton */
+    color: #fff; /* Couleur du texte */
+    font-size: 1.5rem; /* Taille du texte */
+    font-weight: bold;
+    padding: 15px 30px; /* Espace interne du bouton */
+    border-radius: 30px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: all 0.3s ease-in-out; /* Animation sur les transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet 3D */
+}
+
+/* Effet au survol */
+.cv-button:hover {
+    background-color: #333; /* Change la couleur de fond */
+    color: #ed930d; /* Change la couleur du texte */
+    transform: scale(1.1); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Augmente l'ombre */
+}
+
+/* ***************compétence******************* */
+
+#competence {
+    padding: 40px 5%;
+    background-color: #FFFAE1;
+    text-align: center;
+}
+
+#competence h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+/* FLEX CONTAINER POUR LES BLOCS */
+#technique {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* BLOC DE COMPÉTENCE */
+.skill-block {
+    text-align: center;
+    max-width: 250px;
+    flex: 1;
+    margin: 0 auto;
+}
+
+.skill-block h3 {
+    font-size: 40px;
+    color: #ed930d;
+    margin-bottom: 10px;
+}
+
+.skill-block h4 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* CERCLE DE COMPÉTENCE */
+.skill-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.skill-circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); /* Oriente le cercle pour démarrer en haut */
+}
+
+.skill-circle .background {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 10;
+}
+
+.skill-circle .progress {
+    fill: none;
+    stroke: #ed930d;
+    stroke-width: 10;
+    stroke-dasharray: 283; /* Circonférence totale du cercle */
+    stroke-dashoffset: calc(283 - (283 * var(--percentage)) / 100); /* Ajuste la progression avec CSS */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* TEXTE AU CENTRE DU CERCLE */
+.skill-circle .skill-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVITÉ POUR LES PETITS ÉCRANS */
+@media (max-width: 768px) {
+    #technique {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-block {
+        width: 100%;
+    }
+}
+
+
+/* *************************competencePersonnelle**************************** */
+
+/* SECTION COMPÉTENCES PERSONNELLES */
+#competences-personnelle {
+    padding: 60px 5%;
+    background: #FFFAE1;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#competences-personnelle h2 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+/* LISTE DES COMPÉTENCES */
+.personnelle {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.personnelle ul {
+    list-style-type: none; /* Pas de puces par défaut */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.personnelle ul li {
+    font-size: 1rem;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 1 calc(30% - 20px); /* Chaque compétence occupe environ 30% de la largeur */
+    text-align: center;
+}
+
+.personnelle ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVITÉ */
+@media (max-width: 768px) {
+    .personnelle ul li {
+        flex: 0 1 calc(45% - 20px); /* Sur les écrans moyens, chaque compétence prend 45% de largeur */
+    }
+}
+
+@media (max-width: 480px) {
+    .personnelle ul li {
+        flex: 0 1 calc(100% - 20px); /* Sur les petits écrans, chaque compétence occupe toute la largeur */
+    }
+}
+
+
+
+/* *****************************projet****************************** */
+
+
+/* SECTION PROJETS */
+#projet {
+    padding: 60px 5%;
+    background: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projet h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+/* CONTAINER DES PROJETS */
+#prestation2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* STYLISATION DES BLOCS INDIVIDUELS */
+.imagePrestation2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagePrestation2 h3 {
+    font-size: 2rem;
+    color: #ed930d;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.imagePrestation2 h4 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.imagePrestation2 img {
+    width: 150px; /* Réduction de la taille des images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.imagePrestation2 a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* EFFET DE SURVOL SUR LE BLOC ENTIER */
+.imagePrestation2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVITÉ */
+@media (max-width: 768px) {
+    #prestation2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagePrestation2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* **************************me contacter************************************** */
+
+/* STYLISATION GÉNÉRALE DU FOOTER */
+footer {
+    background-color: #524A3A;
+    color: #FFFAE1;
+    padding: 40px 0 60px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    position: relative;
+}
+
+/* TRAIT DIVISEUR */
+#premierTrait {
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 40px auto;
+}
+
+/* SECTION DES ICÔNES SOCIALES */
+#socialIcons {
+    position: absolute;
+    bottom: 10px; /* Position en bas de la page */
+    right: 20px; /* Aligné à droite */
+    display: flex;
+    gap: 15px;
+}
+
+#socialIcons a {
+    text-decoration: none;
+    color: #FFFAE1; /* Couleur des icônes */
+    font-size: 1.5rem; /* Taille des icônes */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#socialIcons a:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+    color: #e55039; /* Changement de couleur au survol */
+}
+
+/* INPUTS ET BOUTONS DU FORMULAIRE */
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    border: none;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #FFFAE1;
+    color: #524A3A;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e55039;
+    color: #FFFAE1;
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* COPYRIGHT */
+#copyright {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
